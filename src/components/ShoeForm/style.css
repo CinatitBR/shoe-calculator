@@ -15,10 +15,3 @@
   flex-direction: column;
   gap: 5px;
 }
-
-.shoeForm .field-list .radio-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
-}

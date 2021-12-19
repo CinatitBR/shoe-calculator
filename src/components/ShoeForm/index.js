@@ -1,3 +1,6 @@
+import InputRange from '../InputRange'
+import InputRadio from '../InputRadio'
+
 import './style.css'
 
 const ShoeForm = ({ values, onChange }) => {
@@ -16,7 +19,16 @@ const ShoeForm = ({ values, onChange }) => {
   return (
     <div className="shoeForm">
       <div className="field-list">
-        <label className="field">
+        <InputRange 
+          label="How many days per week do you run approximately?"
+          min="1" 
+          max="7" 
+          name="daysWeek"
+          value={values.daysWeek} 
+          onChange={handleChange}
+        />
+
+        {/* <label className="field">
           How many days per week do you run approximately?
 
           <input 
@@ -27,57 +39,45 @@ const ShoeForm = ({ values, onChange }) => {
             value={values.daysWeek} 
             onChange={handleChange}
           />
-        </label>
+        </label> */}
 
-        <label className="field">
-          What is your typical distance?
-
-          <input 
-            type="range" 
-            min="1" 
-            max="30" 
-            name="distance"
-            value={values.distance} 
-            onChange={handleChange}
-          />
-        </label>
+        <InputRange 
+          label="What is your typical distance?"
+          min="1" 
+          max="30" 
+          name="distance"
+          value={values.distance} 
+          onChange={handleChange}
+        />
 
         <div className="field">
           Do you run during holidays?
 
           <div className="input-group">
-            <label className="radio-wrapper">
-              <input 
-                type="radio" 
-                name="holidayRun" 
-                value={1}
-                defaultChecked={values.holidayRun === 1}
-                onChange={handleChange}
-              />
-              Yes
-            </label>
+            <InputRadio 
+              label="Yes"
+              name="holidayRun" 
+              value={1}
+              defaultChecked={values.holidayRun === 1}
+              onChange={handleChange}
+            />
 
-            <label className="radio-wrapper">
-              <input 
-                type="radio" 
-                name="holidayRun" 
-                value={0}
-                defaultChecked={values.holidayRun === 0}
-                onChange={handleChange}
-              />
-              No
-            </label>
+            <InputRadio 
+              label="No"
+              name="holidayRun" 
+              value={0}
+              defaultChecked={values.holidayRun === 0}
+              onChange={handleChange}
+            />
 
-            <label className="radio-wrapper">
-              <input 
-                type="radio" 
-                name="holidayRun" 
-                value={2}
-                defaultChecked={values.holidayRun === 2}
-                onChange={handleChange}
-              />
-              It depends
-            </label>
+            <InputRadio 
+              label="It depends"
+              type="radio" 
+              name="holidayRun" 
+              value={2}
+              defaultChecked={values.holidayRun === 2}
+              onChange={handleChange}
+            />
           </div>
         </div>
 
@@ -85,36 +85,30 @@ const ShoeForm = ({ values, onChange }) => {
           Where do you run typically?
 
           <div className="input-group">
-            <label className="radio-wrapper">
-              <input 
-                type="radio" 
-                name="trailType" 
-                value={0} 
-                defaultChecked={values.trailType === 0}
-                onChange={handleChange}
-              />
-              Asphalt
-            </label>
+            <InputRadio
+              label="Asphalt"
+              type="radio" 
+              name="trailType" 
+              value={0} 
+              defaultChecked={values.trailType === 0}
+              onChange={handleChange}
+            />
 
-            <label className="radio-wrapper">
-              <input 
-                type="radio" 
-                name="trailType" 
-                value={1}
-                onChange={handleChange}
-              />
-              Forest and field
-            </label>
+            <InputRadio
+              label="Forest and field"
+              type="radio" 
+              name="trailType" 
+              value={1}
+              onChange={handleChange}
+            />
 
-            <label className="radio-wrapper">
-              <input 
-                type="radio" 
-                name="trailType" 
-                value={2}
-                onChange={handleChange}
-              />
-              Mixed
-            </label>
+            <InputRadio
+              label="Mixed"
+              type="radio" 
+              name="trailType" 
+              value={2}
+              onChange={handleChange}
+            />
           </div>
         </div>
       </div>
