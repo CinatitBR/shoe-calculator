@@ -1,0 +1,9 @@
+.sidebar {
+  background-color: var(--background-light);
+  padding: 16px;
+  padding-top: 80px;
+
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
