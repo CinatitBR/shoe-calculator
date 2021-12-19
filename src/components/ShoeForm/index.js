@@ -21,7 +21,7 @@ const ShoeForm = ({ values, onChange }) => {
 
           <input 
             type="range" 
-            min="2" 
+            min="1" 
             max="7" 
             name="daysWeek"
             value={values.daysWeek} 
@@ -90,6 +90,7 @@ const ShoeForm = ({ values, onChange }) => {
                 type="radio" 
                 name="trailType" 
                 value={0} 
+                defaultChecked={values.trailType === 0}
                 onChange={handleChange}
               />
               Asphalt

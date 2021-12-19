@@ -32,7 +32,7 @@ const getWeeks = (holidayRun) => {
 }
 
 const getNumberOfShoes = ({ yearlyDistance, survivalTime }) => {
-  return Math.min(Math.max(1, yearlyDistance / survivalTime), 4)
+  return Math.round(Math.min(Math.max(1, yearlyDistance / survivalTime), 4))
 }
 
 const getSubscription = (numberOfShoes) => {
@@ -70,8 +70,8 @@ const InfoFieldList = ({ fields }) => {
 }
 
 const initialFormValues = {
-  daysWeek: 0,
-  distance: 0,
+  daysWeek: 1,
+  distance: 1,
   holidayRun: 0, // 0 = no; 1 = yes; 2 = it depends
   trailType: 0 // 0 = asphalt; 1 = forest and field; 2 = mixed
 }
@@ -87,6 +87,7 @@ function App() {
     shoeUnit: null
   })
 
+  // Calculate shoeInfo values
   useEffect(() => {
     const survivalTime = getSurvivalTime(formValues.trailType)
     const weeks = getWeeks(formValues.holidayRun)
@@ -122,7 +123,7 @@ function App() {
           <div className="info-item-list">
 
             <div className="info-item">
-              <img src={shoeImg} alt="Shoe" />
+              <img src={shoeImg} className="info-image" alt="Shoe" />
 
               <InfoFieldList 
                 fields={[
@@ -143,7 +144,7 @@ function App() {
             </div>
 
             <div className="info-item">
-              <img src={factoryImg} alt="Factory" />
+              <img src={factoryImg} className="info-image" alt="Factory" />
 
               <div className="info-field-list">
                 <InfoFieldList 
@@ -154,13 +155,12 @@ function App() {
                 />
 
                 <p className="message">...We reduce it!</p>
-                <a href={shoeInfo.subscriptionLink}>Subscribe</a>
+                <a className="subscribe-link" href={shoeInfo.subscriptionLink}>Subscribe</a>
               </div>
             </div>
 
           </div>
         </div>
-
 
       </section>
     </div>
