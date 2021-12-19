@@ -1,0 +1,24 @@
+.shoeForm .field-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shoeForm .field-list .field {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shoeForm .field-list .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.shoeForm .field-list .radio-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
