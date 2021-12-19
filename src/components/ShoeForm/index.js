@@ -16,7 +16,7 @@ const ShoeForm = ({ values, onChange }) => {
   return (
     <div className="shoeForm">
       <div className="field-list">
-        <label class="field">
+        <label className="field">
           How many days per week do you run approximately?
 
           <input 
@@ -29,7 +29,7 @@ const ShoeForm = ({ values, onChange }) => {
           />
         </label>
 
-        <label class="field">
+        <label className="field">
           What is your typical distance?
 
           <input 
@@ -46,34 +46,34 @@ const ShoeForm = ({ values, onChange }) => {
           Do you run during holidays?
 
           <div className="input-group">
-            <label class="radio-wrapper">
+            <label className="radio-wrapper">
               <input 
                 type="radio" 
-                name="holidaysRun" 
+                name="holidayRun" 
                 value={1}
-                defaultChecked={values.holidaysRun === 1}
+                defaultChecked={values.holidayRun === 1}
                 onChange={handleChange}
               />
               Yes
             </label>
 
-            <label class="radio-wrapper">
+            <label className="radio-wrapper">
               <input 
                 type="radio" 
-                name="holidaysRun" 
+                name="holidayRun" 
                 value={0}
-                defaultChecked={values.holidaysRun === 0}
+                defaultChecked={values.holidayRun === 0}
                 onChange={handleChange}
               />
               No
             </label>
 
-            <label class="radio-wrapper">
+            <label className="radio-wrapper">
               <input 
                 type="radio" 
-                name="holidaysRun" 
+                name="holidayRun" 
                 value={2}
-                defaultChecked={values.holidaysRun === 2}
+                defaultChecked={values.holidayRun === 2}
                 onChange={handleChange}
               />
               It depends
@@ -85,30 +85,30 @@ const ShoeForm = ({ values, onChange }) => {
           Where do you run typically?
 
           <div className="input-group">
-            <label class="radio-wrapper">
+            <label className="radio-wrapper">
               <input 
                 type="radio" 
-                name="runLocation" 
+                name="trailType" 
                 value={0} 
                 onChange={handleChange}
               />
               Asphalt
             </label>
 
-            <label class="radio-wrapper">
+            <label className="radio-wrapper">
               <input 
                 type="radio" 
-                name="runLocation" 
+                name="trailType" 
                 value={1}
                 onChange={handleChange}
               />
               Forest and field
             </label>
 
-            <label class="radio-wrapper">
+            <label className="radio-wrapper">
               <input 
                 type="radio" 
-                name="runLocation" 
+                name="trailType" 
                 value={2}
                 onChange={handleChange}
               />
