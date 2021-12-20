@@ -1,6 +1,68 @@
 .wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5px;
+  cursor: pointer;
+  position: relative;
+  padding: 4px;
+  padding-left: 28px;
+  border-radius: 4px;
+
+  transition: background-color 0.2s ease;
 }
+
+.wrapper:hover {
+  background-color: #acb1c340;
+}
+
+.wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.wrapper .checkmark {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--background-light);
+  border: solid 2px var(--gray);
+  transition: background-color 0.2s ease;
+
+  position: absolute;
+  top: 50%;  
+  left: 4px;
+  transform: translateY(-50%);
+}
+
+/* When mouse is over the radio */
+.wrapper:hover .checkmark {
+  background-color: var(--background-dark);
+}
+
+/* When radio is checked */
+.wrapper input:checked ~ .checkmark {
+  background-color: var(--orange);
+  border: none;
+}
+
+/* Create the indicator */
+.checkmark:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--white);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+
+  display: none;
+}
+
+/* Show indicator when checked */
+.wrapper input:checked ~ .checkmark:before {
+  display: block;
+}
+

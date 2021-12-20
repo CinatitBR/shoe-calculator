@@ -28,19 +28,6 @@ const ShoeForm = ({ values, onChange }) => {
           onChange={handleChange}
         />
 
-        {/* <label className="field">
-          How many days per week do you run approximately?
-
-          <input 
-            type="range" 
-            min="1" 
-            max="7" 
-            name="daysWeek"
-            value={values.daysWeek} 
-            onChange={handleChange}
-          />
-        </label> */}
-
         <InputRange 
           label="What is your typical distance?"
           min="1" 
