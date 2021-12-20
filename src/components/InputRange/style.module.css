@@ -15,4 +15,5 @@
 .bubble {
   position: absolute;
   transform: translateX(-50%);
+  color: var(--orange-light);
 }

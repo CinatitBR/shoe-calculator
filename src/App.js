@@ -3,8 +3,10 @@ import { useState, useEffect } from 'react'
 import Sidebar from './components/Sidebar'
 import ShoeForm from './components/ShoeForm'
 
-import shoeImg from './assets/shoe.png'
-import factoryImg from './assets/factory.png'
+import shoeSvg from './assets/shoe.svg'
+import industrySvg from './assets/industry.svg'
+// import shoeImg from './assets/shoe.png'
+// import factoryImg from './assets/factory.png'
 
 import './style.css'
 
@@ -123,7 +125,9 @@ function App() {
           <div className="info-item-list">
 
             <div className="info-item">
-              <img src={shoeImg} className="info-image" alt="Shoe" />
+              <div className="imageWrapper">
+                <img src={shoeSvg} alt="Shoe" />
+              </div>
 
               <InfoFieldList 
                 fields={[
@@ -144,7 +148,9 @@ function App() {
             </div>
 
             <div className="info-item">
-              <img src={factoryImg} className="info-image" alt="Factory" />
+              <div className="imageWrapper">
+                <img src={industrySvg} alt="Factory" />
+              </div>
 
               <div className="info-field-list">
                 <InfoFieldList 
