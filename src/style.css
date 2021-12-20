@@ -24,7 +24,7 @@ body {
   height: 100vh;
 }
 
-img {
+.info-item img {
   background-color: var(--white);
   border-radius: 5%;
 }
@@ -33,6 +33,7 @@ img {
 .app-wrapper {
   width: 100vw;
   height: 100vh;
+  overflow: auto;
 
   display: flex;
   flex-direction: row;
@@ -63,7 +64,8 @@ img {
 .info-item-list {
   display: flex;
   flex-direction: row;
-  gap: 150px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .info-item-list .info-item {

@@ -19,7 +19,7 @@ const InputRange = ({ label, name, min, max, value, unit, onChange }) => {
   return (
     <label className={style.wrapper}>
       {label}
-      
+
       <div className={style.sliderWrapper}>
         <input 
           type="range" 
