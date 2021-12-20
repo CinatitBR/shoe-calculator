@@ -41,7 +41,7 @@
 
 /* When radio is checked */
 .wrapper input:checked ~ .checkmark {
-  background-color: var(--orange);
+  background-color: var(--orange-light);
   border: none;
 }
 
