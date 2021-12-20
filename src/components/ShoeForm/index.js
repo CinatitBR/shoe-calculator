@@ -25,6 +25,7 @@ const ShoeForm = ({ values, onChange }) => {
           max="7" 
           name="daysWeek"
           value={values.daysWeek} 
+          unit="days"
           onChange={handleChange}
         />
 
@@ -34,6 +35,7 @@ const ShoeForm = ({ values, onChange }) => {
           max="30" 
           name="distance"
           value={values.distance} 
+          unit="km"
           onChange={handleChange}
         />
 
