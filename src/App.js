@@ -95,7 +95,7 @@ function App() {
     const numberOfShoes = getNumberOfShoes({ yearlyDistance, survivalTime })
     const { subscription, subscriptionLink} = getSubscription(numberOfShoes)
 
-    const shoeUnit = 'pair(s)'
+    const shoeUnit = 'Paar im Jahr'
     const co2 = numberOfShoes * 28 // Kg
 
     setShoeInfo({  
@@ -118,7 +118,7 @@ function App() {
       <section className="content-wrapper">
 
         <div className="info-wrapper">
-          <h1>Running shoe calculator</h1>
+          <h1>Laufschuhrechner</h1>
 
           <div className="info-item-list">
 
@@ -130,15 +130,15 @@ function App() {
               <InfoFieldList 
                 fields={[
                   { 
-                    title: 'Yearly distance', 
+                    title: 'Jahresdistanz', 
                     value: `${shoeInfo.yearlyDistance} km`
                   },
                   { 
-                    title: 'Recommended number of', 
-                    value: `${shoeInfo.numberOfShoes} ${shoeInfo.shoeUnit} per year`
+                    title: 'Empfohlene Anzahl Laufschuhe', 
+                    value: `${shoeInfo.numberOfShoes} ${shoeInfo.shoeUnit}`
                   },
                   {
-                    title: 'Matching subscription', 
+                    title: 'Passendes Abo', 
                     value: `${shoeInfo.subscription}` 
                   }
                 ]}
@@ -153,13 +153,13 @@ function App() {
               <div className="info-field-list">
                 <InfoFieldList 
                   fields={[{ 
-                    title: 'CO2 footprint', 
+                    title: 'CO2-Fußabdruck', 
                     value: `${shoeInfo.co2} kg` 
                   }]}
                 />
 
                 <div className="message">
-                  We reduce it! <a href={shoeInfo.subscriptionLink}>Subscribe</a>
+                ...Reduzieren wir zusammen! <a href={shoeInfo.subscriptionLink}>Jetzt bestellen</a>
                 </div>
               </div>
             </div>

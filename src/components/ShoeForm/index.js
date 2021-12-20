@@ -21,17 +21,17 @@ const ShoeForm = ({ values, onChange }) => {
       <div className="field-list">
 
         <InputRange 
-          label="How many days per week do you run approximately?"
+          label="An wie vielen Tagen in der Woche läufst du ungefähr?"
           min="1" 
           max="7" 
           name="daysWeek"
           value={values.daysWeek} 
-          unit="days"
+          unit="Tage"
           onChange={handleChange}
         />
 
         <InputRange 
-          label="What is your typical distance?"
+          label="Wie lang ist deine übliche Strecke?"
           min="1" 
           max="30" 
           name="distance"
@@ -42,11 +42,11 @@ const ShoeForm = ({ values, onChange }) => {
 
         <div className="field-group">
           <div className="field">
-            Do you run during holidays?
+            Läufst du auch im Urlaub?
 
             <div className="input-group">
               <InputRadio 
-                label="Yes"
+                label="Ja"
                 name="holidayRun" 
                 value={1}
                 defaultChecked={values.holidayRun === 1}
@@ -54,7 +54,7 @@ const ShoeForm = ({ values, onChange }) => {
               />
 
               <InputRadio 
-                label="No"
+                label="Nein"
                 name="holidayRun" 
                 value={0}
                 defaultChecked={values.holidayRun === 0}
@@ -62,7 +62,7 @@ const ShoeForm = ({ values, onChange }) => {
               />
 
               <InputRadio 
-                label="It depends"
+                label="Mal so mal so"
                 type="radio" 
                 name="holidayRun" 
                 value={2}
@@ -73,7 +73,7 @@ const ShoeForm = ({ values, onChange }) => {
           </div>
 
           <div className="field">
-            Where do you run typically?
+            Wo läufst du typischerweise?
 
             <div className="input-group">
               <InputRadio
@@ -86,7 +86,7 @@ const ShoeForm = ({ values, onChange }) => {
               />
 
               <InputRadio
-                label="Forest and field"
+                label="Wald und Feld"
                 type="radio" 
                 name="trailType" 
                 value={1}
@@ -94,7 +94,7 @@ const ShoeForm = ({ values, onChange }) => {
               />
 
               <InputRadio
-                label="Mixed"
+                label="Gemischt"
                 type="radio" 
                 name="trailType" 
                 value={2}
