@@ -1,0 +1,39 @@
+:root {
+  --background-light: #262730;
+  --background-dark: #0e1117;
+  --gray: #7b7b81;
+  --orange: #ff4b4b;
+  --orange-light: #ffa300;
+  --white: #fafafa;
+  --green: #17a640;
+  --blue: #2e9aff;
+
+  --small-screen: 750px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background: var(--background-dark);
+  color: var(--white);
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}

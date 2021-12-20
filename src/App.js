@@ -5,10 +5,8 @@ import ShoeForm from './components/ShoeForm'
 
 import shoeSvg from './assets/shoe.svg'
 import industrySvg from './assets/industry.svg'
-// import shoeImg from './assets/shoe.png'
-// import factoryImg from './assets/factory.png'
 
-import './style.css'
+import './App.css'
 
 
 const getSurvivalTime = (trailType) => {
@@ -160,8 +158,9 @@ function App() {
                   }]}
                 />
 
-                <p className="message">...We reduce it!</p>
-                <a className="subscribe-link" href={shoeInfo.subscriptionLink}>Subscribe</a>
+                <div className="message">
+                  We reduce it! <a href={shoeInfo.subscriptionLink}>Subscribe</a>
+                </div>
               </div>
             </div>
 
