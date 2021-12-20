@@ -3,3 +3,16 @@
   flex-direction: column;
   gap: 15px;
 }
+
+.sliderWrapper {
+  position: relative;
+}
+
+input { 
+  width: 100%;
+}
+
+.bubble {
+  position: absolute;
+  transform: translateX(-50%);
+}
