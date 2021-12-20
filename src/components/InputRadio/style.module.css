@@ -65,4 +65,3 @@
 .wrapper input:checked ~ .checkmark:before {
   display: block;
 }
-

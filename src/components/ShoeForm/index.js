@@ -19,6 +19,7 @@ const ShoeForm = ({ values, onChange }) => {
   return (
     <div className="shoeForm">
       <div className="field-list">
+
         <InputRange 
           label="How many days per week do you run approximately?"
           min="1" 
@@ -39,67 +40,70 @@ const ShoeForm = ({ values, onChange }) => {
           onChange={handleChange}
         />
 
-        <div className="field">
-          Do you run during holidays?
+        <div className="field-group">
+          <div className="field">
+            Do you run during holidays?
 
-          <div className="input-group">
-            <InputRadio 
-              label="Yes"
-              name="holidayRun" 
-              value={1}
-              defaultChecked={values.holidayRun === 1}
-              onChange={handleChange}
-            />
+            <div className="input-group">
+              <InputRadio 
+                label="Yes"
+                name="holidayRun" 
+                value={1}
+                defaultChecked={values.holidayRun === 1}
+                onChange={handleChange}
+              />
 
-            <InputRadio 
-              label="No"
-              name="holidayRun" 
-              value={0}
-              defaultChecked={values.holidayRun === 0}
-              onChange={handleChange}
-            />
+              <InputRadio 
+                label="No"
+                name="holidayRun" 
+                value={0}
+                defaultChecked={values.holidayRun === 0}
+                onChange={handleChange}
+              />
 
-            <InputRadio 
-              label="It depends"
-              type="radio" 
-              name="holidayRun" 
-              value={2}
-              defaultChecked={values.holidayRun === 2}
-              onChange={handleChange}
-            />
+              <InputRadio 
+                label="It depends"
+                type="radio" 
+                name="holidayRun" 
+                value={2}
+                defaultChecked={values.holidayRun === 2}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+
+          <div className="field">
+            Where do you run typically?
+
+            <div className="input-group">
+              <InputRadio
+                label="Asphalt"
+                type="radio" 
+                name="trailType" 
+                value={0} 
+                defaultChecked={values.trailType === 0}
+                onChange={handleChange}
+              />
+
+              <InputRadio
+                label="Forest and field"
+                type="radio" 
+                name="trailType" 
+                value={1}
+                onChange={handleChange}
+              />
+
+              <InputRadio
+                label="Mixed"
+                type="radio" 
+                name="trailType" 
+                value={2}
+                onChange={handleChange}
+              />
+            </div>
           </div>
         </div>
 
-        <div className="field">
-          Where do you run typically?
-
-          <div className="input-group">
-            <InputRadio
-              label="Asphalt"
-              type="radio" 
-              name="trailType" 
-              value={0} 
-              defaultChecked={values.trailType === 0}
-              onChange={handleChange}
-            />
-
-            <InputRadio
-              label="Forest and field"
-              type="radio" 
-              name="trailType" 
-              value={1}
-              onChange={handleChange}
-            />
-
-            <InputRadio
-              label="Mixed"
-              type="radio" 
-              name="trailType" 
-              value={2}
-              onChange={handleChange}
-            />
-          </div>
-        </div>
       </div>
     </div>
   )
