@@ -6,8 +6,8 @@ import ShoeForm from './components/ShoeForm'
 import shoeSvg from './assets/shoe.svg'
 import industrySvg from './assets/industry.svg'
 
+import './global.css'
 import './App.css'
-
 
 const getSurvivalTime = (trailType) => {
   switch (trailType) {

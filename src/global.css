@@ -2,6 +2,7 @@
   --background-light: #262730;
   --background-dark: #0e1117;
   --gray: #7b7b81;
+  --gray-2: #45454D;
   --orange: #ff4b4b;
   --orange-light: #ffa300;
   --white: #fafafa;
@@ -15,7 +16,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Mulish', sans-serif;
 }
 
 html {
