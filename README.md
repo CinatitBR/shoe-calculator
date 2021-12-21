@@ -8,7 +8,7 @@
 
 ### `Gif`
 
-![image](https://user-images.githubusercontent.com/50183633/146852996-1e0371cc-78a3-4bbb-a13c-c18cdceb2160.png)
+![calculation shoe gif](https://user-images.githubusercontent.com/50183633/146853100-dd8d1044-7152-4dad-a1b4-205ef86b8cf4.gif)
 
 # Getting Started with Create React App
 
