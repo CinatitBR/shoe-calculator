@@ -1,3 +1,15 @@
+# Working App Preview
+
+[**Video preview link**](https://youtu.be/7EO1Cx41WCA)
+
+### `Images`
+
+![image](https://user-images.githubusercontent.com/50183633/146852196-38fe0bb3-6e16-4769-9e4f-228902c6e18c.png)
+
+### `Gif`
+
+![calculation shoe gif](https://user-images.githubusercontent.com/50183633/146853100-dd8d1044-7152-4dad-a1b4-205ef86b8cf4.gif)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
