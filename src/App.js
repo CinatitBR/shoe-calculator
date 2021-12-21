@@ -153,7 +153,7 @@ function App() {
               <div className="info-field-list">
                 <InfoFieldList 
                   fields={[{ 
-                    title: 'CO2-Fußabdruck', 
+                    title: <>CO<sub>2</sub>-Fußabdruck</>,
                     value: `${shoeInfo.co2} kg` 
                   }]}
                 />

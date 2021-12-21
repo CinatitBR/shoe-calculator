@@ -73,7 +73,7 @@ const ShoeForm = ({ values, onChange }) => {
           </div>
 
           <div className="field">
-            Wo läufst du typischerweise?
+            Wo läufst du?
 
             <div className="input-group">
               <InputRadio
